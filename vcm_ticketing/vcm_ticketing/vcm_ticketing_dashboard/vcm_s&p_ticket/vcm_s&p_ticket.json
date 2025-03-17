@@ -1,0 +1,32 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "S&P Ticket Summary",
+   "width": "Half"
+  },
+  {
+   "chart": "S&P Active Ticket",
+   "width": "Half"
+  },
+  {
+   "chart": "S&P Agent Summary",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-03-11 14:47:53.380723",
+ "dashboard_name": "VCM S&P Ticket",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-03-11 15:03:40.921664",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "VCM S&P Ticket",
+ "owner": "Administrator"
+}

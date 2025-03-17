@@ -1,0 +1,32 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "IT Agents Summary",
+   "width": "Half"
+  },
+  {
+   "chart": "IT Ticket Overview",
+   "width": "Half"
+  },
+  {
+   "chart": "IT Ticket Status",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-03-11 16:01:06.281055",
+ "dashboard_name": "VCM IT Ticket",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-03-11 16:19:31.088165",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "VCM IT Ticket",
+ "owner": "Administrator"
+}

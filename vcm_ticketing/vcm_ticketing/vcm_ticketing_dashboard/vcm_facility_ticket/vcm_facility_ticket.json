@@ -1,0 +1,32 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "width": "Half"
+  },
+  {
+   "chart": "Facility Ticket Summary",
+   "width": "Half"
+  },
+  {
+   "chart": "Facility Active Tickets",
+   "width": "Half"
+  },
+  {
+   "chart": "Facility Department Summary",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-03-11 14:35:13.514204",
+ "dashboard_name": "VCM Facility Ticket",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-03-11 14:45:18.900955",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "VCM Facility Ticket",
+ "owner": "Administrator"
+}

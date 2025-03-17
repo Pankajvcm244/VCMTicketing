@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ERP-{YY}-{######}",
+ "creation": "2025-03-10 14:45:22.004439",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sp_ticket_system_section",
+  "name1",
+  "email_id",
+  "mobile",
+  "sp_category",
+  "sp_sub_category",
+  "description",
+  "column_break_vhlm",
+  "status",
+  "priority",
+  "assigned_to",
+  "ticket_aging",
+  "screenshot",
+  "feedback",
+  "solution"
+ ],
+ "fields": [
+  {
+   "fieldname": "sp_ticket_system_section",
+   "fieldtype": "Section Break",
+   "label": "SP Ticket System"
+  },
+  {
+   "fieldname": "sp_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SP Category",
+   "options": "Farvision\nERPNext"
+  },
+  {
+   "fieldname": "sp_sub_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "SP Sub Category"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_vhlm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nPending\nWorking\nClose"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "LOW\nMEDIUM\nHIGH"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "link_filters": "[[\"User\",\"role\",\"=\",\"Vcm SP Agent\"]]",
+   "options": "User",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "screenshot",
+   "fieldtype": "Attach",
+   "label": "Screenshot"
+  },
+  {
+   "fieldname": "ticket_aging",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ticket_Aging",
+   "read_only": 1
+  },
+  {
+   "fieldname": "solution",
+   "fieldtype": "Text Editor",
+   "label": "Solution",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "depends_on": "eval:doc.status == 'Close'\n",
+   "fieldname": "feedback",
+   "fieldtype": "Rating",
+   "label": "Feedback"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-11 15:37:27.029342",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "Vcm TicketSP",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vcm SP Agent",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vcm SP Agent",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "description",
+ "track_changes": 1,
+ "track_seen": 1
+}

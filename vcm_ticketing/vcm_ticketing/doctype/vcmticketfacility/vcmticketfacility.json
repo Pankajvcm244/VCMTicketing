@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FAC{YY}-{######}",
+ "creation": "2025-03-10 11:50:35.708439",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "facility_ticket_system_section",
+  "name1",
+  "mobile_number",
+  "location",
+  "department",
+  "area_of_service",
+  "estimated_budget_inr",
+  "is_this_a_routine_maintenance_work",
+  "feedback",
+  "column_break_muxa",
+  "posting_date",
+  "is_your_task_approved_by_your_departmental_hod",
+  "description",
+  "comment",
+  "ticket_aging",
+  "column_break_leug",
+  "email_id",
+  "assigned_to",
+  "status",
+  "priority",
+  "attachment_1",
+  "attachment_2",
+  "attachment_3",
+  "attachment_4"
+ ],
+ "fields": [
+  {
+   "fieldname": "facility_ticket_system_section",
+   "fieldtype": "Section Break",
+   "label": "Facility Ticket System"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "placeholder": "Enter Your Name...",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile Number",
+   "placeholder": "Enter Your Mobile Number.....",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "placeholder": "Enter Your Location.....",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "\nNew Temple\nAdmin offices\nMaintenance\nAshram General\nAshram Kitchen\nBrajwasi Mataji\nCharity Kitchen\nDeity services\nFinance\nFOLK\nGarland making\nGoshala\nGrihastha Quarters\nGuest House\nHospitality\nHousekeeping\nNandanvan Flat\nParaphernalia counter\nPurchase\nRestaurant\nSecurity\nStores\nVehicle\nGuesthouse\nHR\nOld Temple Offices\nNew Rajbhog Kitchen\nHarinaam Distribution\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_of_service",
+   "fieldtype": "Select",
+   "label": "Area Of Service",
+   "options": "\nPlumbing\nCivil\nElectrical\nHeat/AC\nFurniture\nPests\nHousekeeping\nWelding\nOther:",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estimated_budget_inr",
+   "fieldtype": "Data",
+   "label": "Estimated budget (INR)"
+  },
+  {
+   "fieldname": "is_this_a_routine_maintenance_work",
+   "fieldtype": "Select",
+   "label": "Is this a routine maintenance work?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "is_your_task_approved_by_your_departmental_hod",
+   "fieldtype": "Select",
+   "label": "Is your task approved by your departmental HOD? ",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "placeholder": "Please enter the details of your issue..."
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment",
+   "placeholder": "Enter Comment....."
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "link_filters": "[[\"User\",\"role\",\"=\",\"Vcm Facility Agent\"]]",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nWorking\nPending\nClosed"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Priority",
+   "options": "Low\nHigh-Must be done within 2H\nMedium-Must be done within 24H\nUrgent"
+  },
+  {
+   "fieldname": "attachment_1",
+   "fieldtype": "Attach",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach",
+   "label": "Attachment 2"
+  },
+  {
+   "fieldname": "attachment_3",
+   "fieldtype": "Attach",
+   "label": "Attachment 3"
+  },
+  {
+   "fieldname": "attachment_4",
+   "fieldtype": "Attach",
+   "label": "Attachment 4"
+  },
+  {
+   "fieldname": "column_break_muxa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_leug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ticket_aging",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ticket Aging"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "set_only_once": 1
+  },
+  {
+   "depends_on": "eval:doc.status == 'Closed'",
+   "fieldname": "feedback",
+   "fieldtype": "Rating",
+   "label": "Feedback"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-11 15:56:35.116498",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "VcmTicketFacility",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vcm Facility Agent",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vcm Facility Agent",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "description",
+ "track_changes": 1,
+ "track_views": 1
+}
