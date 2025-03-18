@@ -20,7 +20,6 @@
   "is_your_task_approved_by_your_departmental_hod",
   "description",
   "comment",
-  "ticket_aging",
   "column_break_leug",
   "email_id",
   "assigned_to",
@@ -51,14 +50,15 @@
    "in_list_view": 1,
    "label": "Mobile Number",
    "placeholder": "Enter Your Mobile Number.....",
-   "reqd": 1
+   "set_only_once": 1
   },
   {
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location",
    "placeholder": "Enter Your Location.....",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "department",
@@ -67,19 +67,22 @@
    "in_standard_filter": 1,
    "label": "Department",
    "options": "\nNew Temple\nAdmin offices\nMaintenance\nAshram General\nAshram Kitchen\nBrajwasi Mataji\nCharity Kitchen\nDeity services\nFinance\nFOLK\nGarland making\nGoshala\nGrihastha Quarters\nGuest House\nHospitality\nHousekeeping\nNandanvan Flat\nParaphernalia counter\nPurchase\nRestaurant\nSecurity\nStores\nVehicle\nGuesthouse\nHR\nOld Temple Offices\nNew Rajbhog Kitchen\nHarinaam Distribution\nOther",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "area_of_service",
    "fieldtype": "Select",
    "label": "Area Of Service",
    "options": "\nPlumbing\nCivil\nElectrical\nHeat/AC\nFurniture\nPests\nHousekeeping\nWelding\nOther:",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "estimated_budget_inr",
    "fieldtype": "Data",
-   "label": "Estimated budget (INR)"
+   "label": "Estimated budget (INR)",
+   "set_only_once": 1
   },
   {
    "fieldname": "is_this_a_routine_maintenance_work",
@@ -92,7 +95,8 @@
    "fieldtype": "Select",
    "label": "Is your task approved by your departmental HOD? ",
    "options": "\nYes\nNo",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "description",
@@ -117,7 +121,8 @@
    "fieldtype": "Link",
    "label": "Assigned To",
    "link_filters": "[[\"User\",\"role\",\"=\",\"Vcm Facility Agent\"]]",
-   "options": "User"
+   "options": "User",
+   "permlevel": 1
   },
   {
    "fieldname": "status",
@@ -126,7 +131,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nWorking\nPending\nClosed"
+   "options": "Open\nWorking\nPending\nClosed",
+   "permlevel": 1
   },
   {
    "fieldname": "priority",
@@ -165,13 +171,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "ticket_aging",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Ticket Aging"
-  },
-  {
    "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
@@ -182,13 +181,14 @@
    "depends_on": "eval:doc.status == 'Closed'",
    "fieldname": "feedback",
    "fieldtype": "Rating",
-   "label": "Feedback"
+   "label": "Feedback",
+   "permlevel": 2
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-11 15:56:35.116498",
+ "modified": "2025-03-17 15:31:07.576480",
  "modified_by": "Administrator",
  "module": "Vcm Ticketing",
  "name": "VcmTicketFacility",

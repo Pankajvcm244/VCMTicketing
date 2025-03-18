@@ -40,7 +40,8 @@
    "in_standard_filter": 1,
    "label": "Department",
    "options": "Admin offices\nFinance\nFOLK\nGuest House\nParaphernalia counter\nPurchase\nRestaurant\nStores\nVehicle\nGuesthouse\nHR\nOld Temple Offices\nOther",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "contact",
@@ -58,12 +59,14 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "IT Category",
-   "options": "Desktop Issue\nLaptop Issue\nPrinter Issue\nNetwork Issue\nAsset Purchase Request"
+   "options": "Desktop Issue\nLaptop Issue\nPrinter Issue\nNetwork Issue\nAsset Purchase Request",
+   "set_only_once": 1
   },
   {
    "fieldname": "it_sub_category",
    "fieldtype": "Select",
-   "label": "IT Sub Category"
+   "label": "IT Sub Category",
+   "set_only_once": 1
   },
   {
    "fieldname": "status",
@@ -71,7 +74,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nPending\nWorking\nClose"
+   "options": "Open\nPending\nWorking\nClose",
+   "permlevel": 1
   },
   {
    "fieldname": "priority",
@@ -113,13 +117,14 @@
    "depends_on": "eval:doc.status == 'Close'",
    "fieldname": "feedback",
    "fieldtype": "Rating",
-   "label": "Feedback"
+   "label": "Feedback",
+   "permlevel": 2
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-11 15:58:55.797269",
+ "modified": "2025-03-17 14:57:00.832049",
  "modified_by": "Administrator",
  "module": "Vcm Ticketing",
  "name": "Vcm TicketIT",

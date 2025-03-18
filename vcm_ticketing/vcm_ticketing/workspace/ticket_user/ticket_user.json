@@ -1,0 +1,61 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"9qyc-6mZfb\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"si-4tBEp34\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b> USER TICKET DASHBOARD <br></b></span>\",\"col\":12}},{\"id\":\"xtIG8uB9hM\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"b0lZHDNO1S\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"S&P Ticket\",\"col\":3}},{\"id\":\"oMKX_RiR6_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IT Tickets\",\"col\":3}},{\"id\":\"c8Lfi5mSJF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Facility Tickets\",\"col\":3}}]",
+ "creation": "2025-03-17 11:54:55.443917",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Ticket User",
+ "links": [],
+ "modified": "2025-03-17 14:14:05.979364",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "Ticket User",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "VCM Ticketing",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "All"
+  },
+  {
+   "role": "Vcm Ticketing User"
+  }
+ ],
+ "sequence_id": 46.0,
+ "shortcuts": [
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "S&P Ticket",
+   "link_to": "Vcm TicketSP",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "IT Tickets",
+   "link_to": "Vcm TicketIT",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Facility Tickets",
+   "link_to": "VcmTicketFacility",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Ticket User"
+}

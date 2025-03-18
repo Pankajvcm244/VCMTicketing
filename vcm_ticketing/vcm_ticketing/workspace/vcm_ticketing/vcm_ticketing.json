@@ -1,0 +1,45 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"640rsYpJCX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Welcome To VCM Ticketing</span>\",\"col\":12}}]",
+ "creation": "2025-03-11 17:16:10.244546",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "text",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "VCM Ticketing",
+ "links": [],
+ "modified": "2025-03-17 14:24:36.364652",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "VCM Ticketing",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Vcm Ticketing User"
+  },
+  {
+   "role": "All"
+  },
+  {
+   "role": "Vcm SP Agent"
+  },
+  {
+   "role": "Vcm IT Agent"
+  },
+  {
+   "role": "Vcm Facility Agent"
+  }
+ ],
+ "sequence_id": 42.0,
+ "shortcuts": [],
+ "title": "VCM Ticketing"
+}

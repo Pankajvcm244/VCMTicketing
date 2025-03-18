@@ -1,0 +1,55 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"d3nfzVeZAC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Facility Agents</span>\",\"col\":12}},{\"id\":\"b2ok1q8SN8\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"U1Mr1wAPo5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Facility Tickets\",\"col\":3}},{\"id\":\"LA7m_Q7ZIw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Facility Tickets Dashboard\",\"col\":3}},{\"id\":\"VMoUBysu4c\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"SscJtxwSF6\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Facility Open Tickets\",\"col\":4}}]",
+ "creation": "2025-03-11 17:29:30.564896",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Facility Agents",
+ "links": [],
+ "modified": "2025-03-17 14:14:06.784202",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "Facility Agents",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "VCM Ticketing",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "VcmTicketFacility",
+   "label": "Facility Open Tickets",
+   "quick_list_filter": "[[\"VcmTicketFacility\",\"status\",\"!=\",\"Closed\",false]]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Vcm Facility Agent"
+  }
+ ],
+ "sequence_id": 44.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Facility Tickets",
+   "link_to": "VcmTicketFacility",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Facility Tickets Dashboard",
+   "link_to": "VCM Facility Ticket",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Facility Agents"
+}

@@ -220,3 +220,15 @@ class VcmTicketSP(Document):
             )
         except Exception as e:
             frappe.log_error(f"Failed to send email for ticket: {self.name}. Error: {str(e)}", "Email Sending Error")
+
+@frappe.whitelist()
+def reopen_ticket(ticket_name):
+    # Check if the user has access before updating
+    if not frappe.has_permission("Vcm TicketSP", "write"):
+        frappe.throw("You do not have permission to re-open this ticket.")
+
+    # Update the status
+    frappe.db.set_value("Vcm TicketSP", ticket_name, "status", "Open")
+    frappe.db.commit()
+    
+    return "Ticket Re-Opened Successfully"

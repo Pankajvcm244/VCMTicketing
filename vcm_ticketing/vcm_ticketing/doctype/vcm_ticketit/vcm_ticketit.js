@@ -47,7 +47,7 @@ frappe.ui.form.on('Vcm TicketIT', {
 
     onload: function(frm) {
         // Check if Email ID, Mobile, or Full Name fields are empty
-        if (!frm.doc.email_id || !frm.doc.mobile || !frm.doc.full_name) {
+        if (!frm.doc.email_id || !frm.doc.contact || !frm.doc.name1) {
             // Fetch the creator's email, mobile number, and full name
             frappe.call({
                 method: 'frappe.client.get_value',
@@ -62,26 +62,34 @@ frappe.ui.form.on('Vcm TicketIT', {
                         if (!frm.doc.email_id && response.message.email) {
                             frm.set_value('email_id', response.message.email);
                         }
-                        // Set the mobile number if it's empty
-                        if (!frm.doc.mobile && response.message.mobile_no) {
-                            frm.set_value('contact', response.message.mobile_no);
-                        }
                         // Set the full name if it's empty
-                        if (!frm.doc.full_name && response.message.full_name) {
+                        if (!frm.doc.name1 && response.message.full_name) {
                             frm.set_value('name1', response.message.full_name);
                         }
+                        // Set the mobile number if available, otherwise allow manual entry
+                        if (response.message.mobile_no) {
+                            frm.set_value('contact', response.message.mobile_no);
+                            frm.set_df_property('contact', 'read_only', 1); // Make mobile read-only if fetched
+                        } else {
+                            frm.set_df_property('contact', 'read_only', 0); // Allow manual entry
+                        }
                     }
-                    // Make all three fields read-only
+                    // Make Email and Name fields read-only
                     frm.set_df_property('email_id', 'read_only', 1);
-                    frm.set_df_property('contact', 'read_only', 1);
                     frm.set_df_property('name1', 'read_only', 1);
                 }
             });
         } else {
-            // If the fields are not empty, set them as read-only
+            // If the fields are already filled, set them as read-only except mobile
             frm.set_df_property('email_id', 'read_only', 1);
-            frm.set_df_property('contact', 'read_only', 1);
             frm.set_df_property('name1', 'read_only', 1);
+            
+            // Allow manual entry for mobile if it was not fetched
+            if (!frm.doc.contact) {
+                frm.set_df_property('contact', 'read_only', 0);
+            } else {
+                frm.set_df_property('contact', 'read_only', 1);
+            }
         }
     }
 

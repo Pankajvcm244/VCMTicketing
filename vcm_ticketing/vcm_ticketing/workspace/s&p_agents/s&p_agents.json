@@ -1,0 +1,55 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"sarxBP3715\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">S&amp;P Agents</span>\",\"col\":12}},{\"id\":\"Qh_gU087EC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"R3AHl5KWNQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"S&P Tickets\",\"col\":3}},{\"id\":\"ZUbRR2EVlv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"S&P Ticket Dashboard\",\"col\":3}},{\"id\":\"pMM3emDWC8\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tnPHz6QtN2\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"S&P Open Tickets\",\"col\":4}}]",
+ "creation": "2025-03-11 17:17:08.343533",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "S&P Agents",
+ "links": [],
+ "modified": "2025-03-17 14:14:06.514073",
+ "modified_by": "Administrator",
+ "module": "Vcm Ticketing",
+ "name": "S&P Agents",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "VCM Ticketing",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Vcm TicketSP",
+   "label": "S&P Open Tickets",
+   "quick_list_filter": "[[\"Vcm TicketSP\",\"status\",\"!=\",\"Close\",false]]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Vcm SP Agent"
+  }
+ ],
+ "sequence_id": 43.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "S&P Ticket Dashboard",
+   "link_to": "VCM S&P Ticket",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "S&P Tickets",
+   "link_to": "Vcm TicketSP",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "S&P Agents"
+}

@@ -17,7 +17,6 @@
   "status",
   "priority",
   "assigned_to",
-  "ticket_aging",
   "screenshot",
   "feedback",
   "solution"
@@ -34,13 +33,15 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "SP Category",
-   "options": "Farvision\nERPNext"
+   "options": "Farvision\nERPNext",
+   "set_only_once": 1
   },
   {
    "fieldname": "sp_sub_category",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "SP Sub Category"
+   "label": "SP Sub Category",
+   "set_only_once": 1
   },
   {
    "fieldname": "email_id",
@@ -50,7 +51,8 @@
   {
    "fieldname": "mobile",
    "fieldtype": "Data",
-   "label": "Mobile"
+   "label": "Mobile",
+   "set_only_once": 1
   },
   {
    "fieldname": "description",
@@ -69,7 +71,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nPending\nWorking\nClose"
+   "options": "Open\nPending\nWorking\nClose",
+   "permlevel": 1
   },
   {
    "fieldname": "priority",
@@ -91,13 +94,6 @@
    "label": "Screenshot"
   },
   {
-   "fieldname": "ticket_aging",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Ticket_Aging",
-   "read_only": 1
-  },
-  {
    "fieldname": "solution",
    "fieldtype": "Text Editor",
    "label": "Solution",
@@ -112,13 +108,14 @@
    "depends_on": "eval:doc.status == 'Close'\n",
    "fieldname": "feedback",
    "fieldtype": "Rating",
-   "label": "Feedback"
+   "label": "Feedback",
+   "permlevel": 2
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-11 15:37:27.029342",
+ "modified": "2025-03-17 15:55:31.986779",
  "modified_by": "Administrator",
  "module": "Vcm Ticketing",
  "name": "Vcm TicketSP",
