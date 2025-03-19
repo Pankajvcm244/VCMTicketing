@@ -71,7 +71,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nPending\nWorking\nClose",
+   "options": "Open\nPending\nWorking\nClose\nRe-Open",
    "permlevel": 1
   },
   {
@@ -115,7 +115,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-17 15:55:31.986779",
+ "modified": "2025-03-19 11:00:49.097072",
  "modified_by": "Administrator",
  "module": "Vcm Ticketing",
  "name": "Vcm TicketSP",
