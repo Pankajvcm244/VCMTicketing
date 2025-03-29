@@ -148,7 +148,7 @@ class VcmTicketSP(Document):
 
     def send_email(self):
         submitter_email = self.email_id  # Ensure this field exists in your Doctype
-        cc_email = "lokesh.sisodiya@vcm.org.in,amansoniofficial20@gmail.com"  
+        cc_email = "aman.soni@vcm.org.in,pankaj.sharma@vcm.org.in"  
 
         if not submitter_email:
             frappe.log_error(f"Submitter email is missing for ticket: {self.name}", "Email Sending Error")
@@ -170,6 +170,10 @@ class VcmTicketSP(Document):
                     <tr style="background-color: #0073e6; color: #ffffff;">
                         <th style="padding: 10px; text-align: left;">Field</th>
                         <th style="padding: 10px; text-align: left;">Details</th>
+                    </tr>
+                    <tr style="background-color: #f2f7fd;">
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Subject</b></td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">{self.subject}</td>
                     </tr>
                     <tr style="background-color: #f2f7fd;">
                         <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Category</b></td>
@@ -194,6 +198,10 @@ class VcmTicketSP(Document):
                     <tr style="background-color: #ffffff;">
                         <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Description</b></td>
                         <td style="padding: 8px; border-bottom: 1px solid #ddd;">{self.description}</td>
+                    </tr>
+                    <tr style="background-color: #ffffff;">
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Solution</b></td>
+                        <td style="padding: 8px; border-bottom: 1px solid #ddd;">{self.solution}</td>
                     </tr>
                 </table>
                 <p style="font-size: 14px; margin-top: 15px;">
