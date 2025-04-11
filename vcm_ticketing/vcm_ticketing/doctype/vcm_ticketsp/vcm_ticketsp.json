@@ -74,7 +74,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nPending\nWorking\nClose\nUrgent\nRe-Open",
+   "options": "Open\nPending\nWorking\nClose\nRe-Open",
    "permlevel": 1
   },
   {
@@ -83,7 +83,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Priority",
-   "options": "LOW\nMEDIUM\nHIGH"
+   "options": "LOW\nMEDIUM\nHIGH\nUrgent"
   },
   {
    "fieldname": "assigned_to",
@@ -136,7 +136,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-10 17:35:07.883401",
+ "modified": "2025-04-11 12:23:40.436012",
  "modified_by": "Administrator",
  "module": "Vcm Ticketing",
  "name": "Vcm TicketSP",

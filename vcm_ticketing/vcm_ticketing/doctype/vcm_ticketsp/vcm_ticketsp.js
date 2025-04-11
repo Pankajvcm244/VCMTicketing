@@ -54,7 +54,7 @@ frappe.ui.form.on('Vcm TicketSP', {
                 'Others'
             ].join('\n');
         } else if (frm.doc.sp_category === 'ERPNext') {
-            sub_category_options = 'POS\nTT\nNew Feature\nError Screen\nUser Creation\nUser Permission/User Rights\nDocument Cancel/Delete\nReport Access\nPos Issues\nBudget Issues\nApproval Changes\nLogin Issues\nMasters';
+            sub_category_options = 'POS\nTT\nNew Feature\nError Screen\nUser Creation\nUser Permission/User Rights\nDocument Cancel/Delete\nReport Access\nPos Issues\nBudget Issues\nApproval Changes\nLogin Issues\nMasters\nReports modification';
         }
 
         frm.set_df_property('sp_sub_category', 'options', sub_category_options);
